@@ -38,8 +38,8 @@ public class CalcServlet extends HttpServlet {
 	String [] eq = {fnumber, symbol, snumber};
 	
 
-	Calculator.main(eq);
-	response.getWriter().append("Answer is: ");
+	Double answer = Calculator.main(eq);
+	response.getWriter().append("Answer is: "+ answer);
 	}
 
 	/**
